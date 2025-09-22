@@ -143,7 +143,7 @@ class OFDM_TX:
             
             self.send_samples(tx_signal)
             print('Transmitting OFDM Samples')
-            time.sleep(0.1)
+            time.sleep(0.2)
             iteration +=1
             # if iteration == self.tx_repeat:
             #     self.keep_running = False        
