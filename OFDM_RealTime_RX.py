@@ -311,7 +311,7 @@ class RealTime_OFDM_Detector:
                 print('Received Message:',rx_str)
 
                 # Write raw samples to file
-                record = samples #[lag:start + self.packet_length]
+                record = samples # [lag:start + self.packet_length]
                 record = record.astype(np.complex64)
                 # with open("rx_output.dat", "ab") as f:
                 #     record.tofile(f)
