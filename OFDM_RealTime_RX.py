@@ -341,7 +341,7 @@ if __name__ == "__main__":
     parser.add_argument("-f", "--freq", type=float, default=3385e6, help="Center frequency in Hz (default: 3385e6)")
     parser.add_argument("-g", "--gain", type=float, default=30, help="Transmit gain in dB (default: 30)")
     parser.add_argument("-r", "--rate", type=float, default=2e6, help="Sample rate in samples/sec (default: 2e6)")
-    # parser.add_argument("--start_time", type=str, help="Start time in HH:MM format (24-hour)")
+    parser.add_argument("--start_time", type=str, help="Start time in HH:MM format (24-hour)")
     args = parser.parse_args()
 
     detector = RealTime_OFDM_Detector(
